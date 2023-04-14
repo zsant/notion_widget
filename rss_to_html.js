@@ -53,7 +53,7 @@ function generateHTML(feed) {
 }
 
 (async () => {
-  const rssFeedUrl = "https://cors-anywhere.herokuapp.com/http://rss.cnn.com/rss/edition.rss";
+  const rssFeedUrl = "http://rss.cnn.com/rss/edition.rss";
   const feed = await fetchRSSFeed(rssFeedUrl);
   generateHTML(feed);
 })();
